@@ -19,6 +19,31 @@ const systemUtilities = {
     }
 }
 
+/*
+    System Settings
+
+    Hue will be the settings application where you can change these.
+    This is all the settings that the user can change, and is saved to /usr/settings.json.
+    :P
+*/  
+const systemSettings = {
+    desktop: {
+        wallpaper: 'assets/images/wallpapers/default.jpg',
+        theme: 'light',
+        icons: 'small',
+        layout: 'grid'
+    },
+    user: {
+        name: 'User',
+        avatar: 'assets/images/avatars/default.png'
+    },
+    system: {
+        version: '0.1.0',
+        build: '2024-07-19',
+        developer: 'hhs-coding-club'
+    }
+}
+
 function acrylic_system_bootSystem() {
     acrylic_system_setupFileSystem();
     acrylic_system_setupDesktop();
